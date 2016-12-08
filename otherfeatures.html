@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding ="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD/ XHTML 1.1 //EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns ="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>Other Features</title>
+<script type="text/javascript">
+function ChangeTitle() {
+    if (!document.getElementById) return;
+    var newtitle = document.form1.newtitle.value;
+    var head1 = document.getElementById("head1");
+    head1.firstChild.nodeValue=newtitle;
+}
+    </script>
+
+<script type ="text/javascript" src="sort.js"></script>
+</script>
+ <script type = "text/javascript" src="loops.js">
+    </script>
+
+}
+     
+
+<script type="text/javascript">
+    var counter = 0;
+    
+    //call update function 2 seconds after first load
+    ID = window.setTimeout("Update();", 2000);
+    
+    function Update() {
+        counter++;
+        textField = document.getElementById("showText");
+        textField.innerHTML = "The counter is now at" + counter;
+        //set another timeout for the next count
+        ID = window.setTimeout("Update();",2000);
+        
+    }
+</script>
+
+</head>
+<body>
+
+<h1 id ="head1"> Change This Heading</h1>
+<p> Try changing the heading of the page.... All you have to do is type something and then press the "Change!" button</p>
+<form action = "" name="form1">
+<div>
+<input type="text" name="newtitle" size="40"  />
+<input type ="button" value="Change!" onclick = "ChangeTitle();"  />
+</div>
+</form>
+
+    <article> this create your own content is still under construction...</article>
+    
+   
+    
+    <p>Enter two or more names and it will get sorted automatically</p>
+    
+    <form name ="theform">
+    Name: 
+        <input type="text" name="newname" size="20"  />
+        <input type="button" name="addname" value="Add" onclick="SortNames();">
+        <br/>
+        <h2>Sorted Names</h2>
+        <textarea cols="60" rows= "10" name="sorted">
+        The sorted names will appear here.
+        </textarea>
+    </form>
+    
+<script type="text/javascript">
+total = 0;
+for(i=1; i<=9000; i++) {
+    
+    num = Math.random();
+    total += num;
+    if (i% 1000 == 0) {
+        
+        document.write("Unpacking  " + i + "numbers...<br/>");
+    }
+}
+    average = total/ 9000;
+    average = Math.round(average * 1000) / 1000;
+    document.write ("<h2>Average of 9000 numbers:  " + average + "</h2>");
+</script>
+ <h1>Alerts , Confirmations and Prompts</h1> 
+<form name ="winform">
+<div>
+<input type="button" value="Display an Alert"
+       onclick = "window.alert('This is just an alert')" />
+    <input type="button" value="Display a Confirmation"
+           onclick = "window.confirm('Would you lke to confirm')" />
+    <input type ="button" value ="Display a Prompt"
+           onclick = "window.prompt('Enter text: '" />
+           
+</div>
+</form>
+
+        
+        
+</body>
+</html>
+

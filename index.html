@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<head>
+<title>Showcasing Talents | Homepage </title>
+<link href= "layout.css" rel="stylesheet" type="text/css">
+<style type ="text/css">
+    body { 
+    font : 12pt Verdana, Arial, Georgia, sans-serif;
+    }
+    a {
+        text-decoration: none;
+        font-weight: bold;
+        color: crimson;
+    }
+    #hide_e {
+        display: none;
+    }
+    #elevation {
+        display: none;
+    }
+    #photos {
+        display: none;
+    }
+    #hide_p {
+        display:none;
+    }
+    #show_e {
+        display: block;
+    }
+    #show_p {
+        display: block;
+    }
+    .fakelink {
+        cursor: pointer;
+        text-decoration: none;
+        font-weight: bold;
+        color:cyan;
+    }
+    #header { 
+    width: auto;
+    }
+    #nav { 
+     float: left;
+    
+    }
+    #nav a {
+        text-decoration: none;
+    }
+    
+    #nav ul {
+        margin : 0px;
+        padding : 0px;
+        list-style: none;
+        display: inline;
+    }
+    
+    #nav li { 
+    display: inline;
+        line-height: 1.8em;
+    }
+    
+    #nav li a:link #nav li a:visited {
+      font-size: 10pt;
+        font-weight: bold;
+        display: block;
+        padding: 7px 10px 7px 10px;
+        background-color: dodgerblue;
+        color: #ffffff;
+    }
+    
+    #nav li a:hover, #nav li a:active { 
+    font-size: 10pt;
+        font-weight: bold;
+        text-decoration: none;
+        padding: px  10px 7px 10px;
+        background-color: darkgoldenrod;
+        color: #000000;
+    }
+    
+    #nav ul ul {
+      margin: 0px;
+        padding:0px;
+        
+    }
+    #nav ul ul li {
+        border-bottom: none;
+        
+    }
+    #nav ul ul li a:link, #nav ul ul li a:visited {
+        font-size: 8pt;
+        font-weight: bold;
+        display: block;
+        padding: 3px 0px 3px 18px;
+        background-color: blue;
+        color: #ffffff;
+    }
+    #nav ul ul li a:hover, #nav ul ul li a:active {
+       font-size: 8pt;
+        font-weight: bold;
+        display:block;
+        padding: 3px 0px 3px 18px;
+        background-color: darkturquoise;
+        color: #000000;
+        
+    }
+    #content { 
+   width: auto;
+        float: left;
+        clear: left;
+    }
+    
+    #content a {
+        text-decoration : none;
+        font-weight: bold;
+    }
+</style>
+
+</head>
+
+<body>
+<div id="header">HEADER</div>
+<h1>Welcome</h1>
+<p>Welcome to my new website of 2016... this website is fully coded properly by me</p>
+<br>
+<div id ="wrapper"></div>
+    <div id="left_side"></div>
+    <div id="nav">
+
+<ul>
+<li><a href="legomarvelavengers.html">Lego Marvel Avengers</a></li>
+<li><a href="#"> Questions </a></li>
+    <ul>
+    <li><a href="questionsyoumightask.html">Questions You Might Ask</a></li>
+    </ul>
+<li><a href="#"> Info On DLC Packs</a></li>
+    <ul>
+    <li><a href="anallnewdoctorstrangepack.html">&raquo;All All-New Doctor Strange Pack</a></li>
+    <li><a href="blackpantherpack.html">&raquo;Black Panther Pack</a></li>
+    <li><a href="classiccaptainmarvelpack.html">&raquo;Classic Captain Marvel Pack</a></li>
+    <li><a href="spidermanpack.html">&raquo;Spiderman Pack</a></li>
+    <li><a href="marvelagentsofs.h.i.e.l.d.html">&raquo;Marvel Agents Of S.H.I.E.L.D</a></li>
+    <li><a href="mastersofevil.html">&raquo;Masters Of Evil</a></li>
+    <li><a href="avengeradventurer.html">&raquo;Avengers Adventurer Pack</a></li>
+    <li><a href="mastersofevil.html">&raquo;Masters Of Evil</a></li>
+    <li><a href="antman.html">&raquo;Ant Man</a></li>
+
+
+
+    </ul>
+<li><a href="otherfeatures.html">Other Features Available Now</a></li>
+</ul>
+</div>
+</div>
+
+
+<ul>
+<li><a href="legomarvelavengers.html">Lego Marvel Avengers</a>: Learn more on Lego Marvel Avengers</li>
+<li><a href="#">Questions</a>: Questions You Might Want To Know On Lego Marvel Avengers</li>
+<li><a href="#">Info On DLC Packs</a>: Info On The DLC Packs in LEGO&reg; Marvel Avengers</li>
+</ul>
+</div>
+<p>This page was last modified on:</p>
+<script type="text/javascript">
+document.write(document.lastModified);
+</script>
+
+<div class="fakelink" 
+     id = "show_e"
+     onclick="this.style.display='none';
+        document.getElementById('hide_e').style.display='block';
+        document.getElementById('elevation').style.display='inline';
+        ">&raquo; Show Elevation</div>
+<div class="fakelink"
+     id="hide_e"
+     onclick="this.style.display ='none';
+     document.getElementById('show_e').style.display='block';
+     document.getElementById('elevation').style.display='none';
+     ">&raquo; Hide Elevation</div>
+<div class ="fakelink"
+     id="show_p"
+     onclick="this.style.display='none';
+        document.getElementById('hide_p').style.display='block';
+        document.getElementById('photos').style.display='inline';
+              ">&raquo; Show More Content from Web</div>
+<div class="fakelink"
+     id="hide_p"
+     onclick ="this.style.display= 'none';
+        document.getElementById('show_p').style.display ='block';
+        document.getElementById('photos').style.display= 'none';
+               ">&raquo; Hide the Content  from Web</div>
+
+<div id="photos"><img src="images.jpeg" alt="My Photo" style="margin-right: 12px; border: 1px solid#000;"/> <img src="mountain.jpg" alt="Mountain" style="margin-right: 12px; border: 1px solid #000;"</div>
+<br>
+<input type="button"
+       onclick="history.back();"
+       value="Go Back" />
+<input type="button"
+       onclick="history.forward();"
+       value="Go Forward"  />
+<h2>Song To Listen</h2>
+    <blockquote>Warning: You will need the quicktime plugin to view it</blockquote>
+    <blockquote>Song : This Time (Remixed)</blockquote>
+    <div style ="float:left; padding: 3px">
+    <object classid ="CLSID: 6BF52A52-394A-11d3-B153-00C04F79FAA6"
+            width="320" height="305">
+        <param name="type" value="video/quicktime" />
+        <param name = "URL" value="Axwell ^ Ingrosso - This Time (Original Mix.mov" />
+        <param name ="uiMode" value ="full" />
+        <param name ="autoStart" value="false" />
+        <embed width="320" height ="305" type="video/quicktime"
+               src="ThisTimeMine.mov" controls="All" loop="false" autostart ="false" pluginspage="https://plugins.apple.com/QuickTime-en-sg" />
+        </object>
+    </div>
+      <script type="text/javascript">
+    document.write("<ul>");
+    document.write("<li><strong> Code Name: </strong> " + navigator.appCodeName);
+    document.write("<li><strong>App Name: </strong>" + navigator.appName);
+    document.write("<li><strong>AppVersion: </strong>" +  navigator.appVersion);
+    document.write("<li><strong>User Agent : </strong>") + navigator.userAgent);
+    document.write("<li><strong>Language :  </strong> "  + navigator.language);
+    document.write("<li><strong>Platform : </strong>" + navigator.platform);
+    document.write("</ul>");
+    </script>
+<div id ="footer">FOOTER</div>
+
+</body>

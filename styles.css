@@ -1,0 +1,50 @@
+body  {
+font-size : 19pt;
+font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+color : blue;
+line-height: 16pt;
+padding-left: 6pt;
+padding-right:  8pt;
+padding-top: 9pt;
+
+}
+
+h1 { 
+font: 19pt Verdana,Geneva, Arial, Helvetica, sans-serif;
+font-weight: bold;
+line-height: 20pt;
+    
+}
+
+p.subheader { 
+font-weight: bold;
+color:deepskyblue;
+}
+
+p.links { 
+font-weight: bold;
+animation-direction: normal;
+font-family: fantasy;
+color:aqua;
+}
+ul { 
+font-feature-settings: normal;
+font-family: fantasy;
+font-weight: bold;
+color:firebrick;
+}
+
+li { 
+font-feature-settings: normal;
+font-family: fantasy;
+font-weight: bold;
+color:firebrick;
+}
+
+div.footer { 
+font-size: 9pt;
+font-style: italic;
+line-height: 12pt;
+text-align: center;
+padding-top: 30pt;
+}
